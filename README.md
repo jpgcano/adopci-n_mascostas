@@ -1,6 +1,3 @@
-Aquí tienes un README claro, natural y útil para una práctica de HTML y CSS basada en tu diseño de adopción de mascotas. Lo dejo listo para colocar directamente en GitHub.
-
----
 
 # Adopción de mascotas
 
