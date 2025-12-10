@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#86FFAA, #4FCEF5, #86FFAA);
+    color: #fff;
+
+}
+
+/* NAV */
+.header {
+    padding: 1px;
+    
+}
+
+.header ul {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    list-style: none;
+    padding-right: 10px;
+}
+
+.header a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* BANNER */
+.banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    mask-image: linear-gradient(transparent 10%, black 4%, black 96%, transparent 80%);
+    -webkit-mask-image: linear-gradient(transparent 0%, black 4%, black 96%, transparent 100%);
+    
+}
+
+/* HISTORIA */
+.historia {
+    text-align: center;
+    padding: 30px;
+}
+
+.historia h2 {
+    background: #1F17FF;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.texto-historia {
+    background: #B697FF;
+    color: #000;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* BOTÓN */
+.boton-aventura {
+    display: inline-block;
+    margin-top: 20px;
+    background: #1F17FF;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* BLOQUES */
+.bloques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.caja {
+    width: 280px;
+    background: #B697FF;
+    color: #000;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav {
+    display: flex;  /* ← ESTO habilita el sistema de alineación */
+    align-items: center;
+    justify-content: space-between;
+}
+
