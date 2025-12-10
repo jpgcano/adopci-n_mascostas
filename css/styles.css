@@ -7,6 +7,9 @@ root{
     --Azul: 4FCEF5;
 
 }
+body{
+        background: linear-gradient(#86FFAA, #4FCEF5, #86FFAA);
+}
 .header_conteiner {
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
