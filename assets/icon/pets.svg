@@ -5,11 +5,9 @@ unicode: "eff9"
 -->
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="32"
-  height="32"
   viewBox="0 0 24 24"
   fill="none"
-  stroke="#8d6e63"
+  stroke="#000000ff"
   stroke-width="1"
   stroke-linecap="round"
   stroke-linejoin="round"
