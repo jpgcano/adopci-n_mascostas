@@ -24,7 +24,7 @@
         margin: 10px;
         padding: .625rem;
         gap: 1.5rem;
-        color: black;
+        color: #ffffe3;
         font-size: 18px;
         
 
@@ -35,7 +35,7 @@
 
             &:hover {
                 background-color: rgba(var(--Verde-Base-RGB), 0.5);
-                color: #073cce;
+                color: #000000;
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
                 transform: scale(110%);
             }

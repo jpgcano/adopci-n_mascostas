@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(#86ffaa, #C17AD3, #A2E6FA);
-    color: #fff;
+    background: #CCB08A;
+    color: #000000;
 
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .historia h2 {
-    background: #a23eff;
+    background: #ffffe3;
     padding: 10px 20px;
     display: inline-block;
     border-radius: 20px;
@@ -43,7 +43,7 @@ body {
 }
 
 .texto-historia {
-    background: #ac89fd;
+    background: #ffffe3;
     color: #000000;
     padding: 20px;
     border-radius: 20px;
@@ -56,8 +56,8 @@ body {
 .boton-aventura {
     display: inline-block;
     margin-top: 20px;
-    background: #a23eff;
-    color: #ffffff;
+    background: #ffffe3;
+    color: #000000;
     padding: 12px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -75,7 +75,7 @@ body {
 
 .caja {
     width: 280px;
-    background: #B697FF;
+    background: #ffffe3;
     color: #000000;
     padding: 20px;
     border-radius: 20px;
