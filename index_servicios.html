@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Servicios Mascotas</title>
+   
+
+    <script>
+        function mostrarFormulario(id) {
+            // Ocultar todos
+            document.querySelectorAll(".formulario").forEach(f => f.style.display = "none");
+            // Mostrar seleccionado
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+        <header class="header_conteiner">
+        <div class="conteiner_img">
+        <img class="header_icon" src="assets/icon/pets.svg" alt="">
+
+        </div>
+        <ul class="conteiner_menu">
+            <li class="item_menu">Inicio</li>
+            <li class="item_menu">Mascotas</li>
+            <li class="item_menu">Nosotros</li>
+            <li class="item_menu">Servicios</li>
+        </ul>
+    </header>
+
+    <section class="banner">
+        <img class="bannerimg" src="assets/img/header6.jpg">
+    </section>    
+
+        <h2>Servicios</h2>
+
+        <button class="menu-btn" onclick="mostrarFormulario('adopcion')">Adopción</button>
+        <button class="menu-btn" onclick="mostrarFormulario('adiestramiento')">Adiestramiento</button>
+        <button class="menu-btn" onclick="mostrarFormulario('donaciones')">Donaciones</button>
+        <button class="menu-btn" onclick="mostrarFormulario('guarderia')">Guardería y Spa</button>
+        <button class="menu-btn" onclick="mostrarFormulario('salir')">Salir al menú principal</button>
+
+
+        <!-- FORMULARIOS -->
+
+        <div class="formulario" id="adopcion">
+            <h3>Formulario de Adopción</h3>
+            <label>Nombre completo:</label>
+            <input type="text">
+
+            <label>¿Qué tipo de mascota desea adoptar?</label>
+            <input type="text">
+
+            <label>Motivo de adopción:</label>
+            <textarea rows="3"></textarea>
+
+            <button class="enviar">Enviar</button>
+        </div>
+
+        <div class="formulario" id="adiestramiento">
+            <h3>Formulario de Adiestramiento</h3>
+            <label>Nombre del dueño:</label>
+            <input type="text">
+
+            <label>Raza del perro:</label>
+            <input type="text">
+
+            <label>Tipo de entrenamiento:</label>
+            <input type="text">
+
+            <button class="enviar">Enviar</button>
+        </div>
+
+        <div class="formulario" id="donaciones">
+            <h3>Formulario de Donaciones</h3>
+            <label>Nombre:</label>
+            <input type="text">
+
+            <label>Monto a donar:</label>
+            <input type="number">
+
+            <label>Mensaje opcional:</label>
+            <textarea rows="3"></textarea>
+
+            <button class="enviar">Enviar</button>
+        </div>
+
+        <div class="formulario" id="guarderia">
+            <h3>Guardería y Spa</h3>
+            <label>Nombre del dueño:</label>
+            <input type="text">
+
+            <label>Nombre de la mascota:</label>
+            <input type="text">
+
+            <label>Servicios deseados:</label>
+            <textarea rows="3"></textarea>
+
+            <button class="enviar">Enviar</button>
+        </div>
+
+        <div class="formulario" id="salir">
+            <h3>Volver al menú principal</h3>
+            <p>Gracias por visitarnos ❤️</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
