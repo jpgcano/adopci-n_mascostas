@@ -5,16 +5,11 @@
 }
 
 :root {
-    --Verde: #86ffaa;
-    --Azul: #4fcef5;
-    --Verde-Base-RGB: 134, 255, 170;
+    --fondo:#CCB08A;
 }
 
 body {
-    background: linear-gradient(180deg,
-            var(--Verde) 0%,
-            var(--Azul) 50%,
-            var(--Verde) 100%);
+    background: var(--fondo);
     background-repeat: no-repeat;
     font-size: medium;
     display: grid;
@@ -25,7 +20,7 @@ body {
 
 .header_conteiner {
     border-radius: 0 0 30px 30px;
-    background-color: rgba(var(--Verde-Base-RGB), 0.23);
+    background-color: #f0d4ac7a;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     display: flex;
@@ -63,7 +58,7 @@ body {
             margin: 5px;
 
             &:hover {
-                background-color: rgba(var(--Verde-Base-RGB), 0.5);
+                background-color: rgba(var(--fondo), 0.5);
                 color: #02008f;
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
                 transform: scale(115%);
@@ -82,61 +77,53 @@ body {
     height: 50px;
     width: 50px;
     padding: 10px;
-    filter: drop-shadow(1px 1px 1px rgb(var(--Verde-Base-RGB)));
+    filter: drop-shadow(1px 1px 1px rgb(0 0 0 0));
 
     &:hover {
         scale: 150%;
-        filter: drop-shadow(2px 2px 2px rgb(var(--Verde-Base-RGB)));
+        filter: drop-shadow(2px 2px 2px rgb(0 0 0 0));
     }
 }
 
 
 
-
-
 footer {
-    width: 90%;
+    background-color:#b89058d5;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     padding: 10px;
     padding-bottom: 0;
-    gap: 10rem;
+    gap: 5rem;
     justify-content: space-between;
+    font-size: 20px;
 
     & .contactos {
-        
-        height: 10rem;
         position: relative;
         display: flex;
         width: 50%;
         flex-direction: column;
-        padding: 10px 5px;
-
-        & .contacto {
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        & p {
             padding: 5px;
             height: auto;
-            position: absolute;
-            font-size: large;
-            top: -5px;
-            left: 40%;
-            text-align: center;
         }
-
         & .conteiner {
-            height: 5rem;
             margin-top: 10px;
             width: 100%;
-            padding: 10px 0px;
+            padding: 10px;
+            padding-bottom: 0;
         }
-
     }
-
     & .proyecto {
         width: 50%;
         display: flex;
         flex-direction: column;
         padding: 0.5rem .625rem;
+        align-items: center;
 
         p {
             text-align: start;
@@ -161,17 +148,13 @@ footer {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-
-                li {
-                    font-size: small;
-                }
             }
         }
 
         & .github {
             display: flex;
             gap: 15px;
-            justify-content: center;
+            justify-content:center;
             font-size: 25px;
             align-items: center;
             padding: 12px;
@@ -188,10 +171,9 @@ footer {
 .instagram,
 .whatsapp,
 .correo {
-    height: 0.5rem;
     padding: 10px 5px;
-    margin: 10px 5px;
+    margin: 0px 5px;
     display: flex;
-    gap: 50px;
+    gap: 20px;
     justify-content: flex-start;
 }
