@@ -1,27 +1,32 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 :root {
     --Verde: #86ffaa;
     --Azul: #4fcef5;
-    --Verde-Base-RGB:134, 255, 170;
+    --Verde-Base-RGB: 134, 255, 170;
 }
 
 body {
     background: linear-gradient(180deg,
-            var(--Verde)   0%,
-            var(--Azul)   50%,
-            var(--Verde) 100%
-            );
-    min-height: 100vh;
+            var(--Verde) 0%,
+            var(--Azul) 50%,
+            var(--Verde) 100%);
     background-repeat: no-repeat;
+    font-size: medium;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
 }
 
 .header_conteiner {
-    background-color: rgba(var(--Verde-Base-RGB),0.1);
-    backdrop-filter: blur(15px); 
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(var(--Verde-Base-RGB), 0.23);
+    backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     display: flex;
     justify-content: space-between;
@@ -29,27 +34,39 @@ body {
     width: 100%;
     align-items: center;
 
+    &:hover {
+        height: 115px;
+
+        & .item_menu {
+            width: 40rem;
+        }
+
+    }
 
     & .conteiner_menu {
         display: flex;
         justify-content: flex-end;
         list-style: none;
-        width: 50%;
+        width: 30rem;
         margin: 10px;
         padding: .625rem;
         gap: 1.5rem;
         color: black;
 
         & .item_menu {
-            border-radius: 30px;
-            padding: 20px;
+            border-radius: 20px;
+            border: var(--Azul) solid;
+            width: 20rem;
+            text-align: center;
+            font-size: 17px;
+            padding: 15px;
             margin: 5px;
 
             &:hover {
                 background-color: rgba(var(--Verde-Base-RGB), 0.5);
-                color: var(--Azul);
+                color: #02008f;
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-                transform: scale(110%);
+                transform: scale(115%);
             }
         }
     }
@@ -68,7 +85,113 @@ body {
     filter: drop-shadow(1px 1px 1px rgb(var(--Verde-Base-RGB)));
 
     &:hover {
-        scale: 130%;
-        filter: drop-shadow(1px 1px 1px rgb(var(--Verde-Base-RGB)));
+        scale: 150%;
+        filter: drop-shadow(2px 2px 2px rgb(var(--Verde-Base-RGB)));
     }
+}
+
+
+
+
+
+footer {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-bottom: 0;
+    gap: 10rem;
+    justify-content: space-between;
+
+    & .contactos {
+        
+        height: 10rem;
+        position: relative;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        padding: 10px 5px;
+
+        & .contacto {
+            padding: 5px;
+            height: auto;
+            position: absolute;
+            font-size: large;
+            top: -5px;
+            left: 40%;
+            text-align: center;
+        }
+
+        & .conteiner {
+            height: 5rem;
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+    }
+
+    & .proyecto {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem .625rem;
+
+        p {
+            text-align: start;
+            margin: 10px;
+            padding: 10px 15px;
+        }
+
+        & .miembros {
+            display: flex;
+            gap: 5px;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 20px;
+
+            p {
+                height: 20px;
+            }
+
+            ul {
+                width: 50%;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                li {
+                    font-size: small;
+                }
+            }
+        }
+
+        & .github {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            font-size: 25px;
+            align-items: center;
+            padding: 12px;
+        }
+    }
+}
+
+.icon-footer {
+    width: 1.7rem;
+    height: 1.7rem;
+    align-self: center;
+}
+
+.instagram,
+.whatsapp,
+.correo {
+    height: 0.5rem;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    display: flex;
+    gap: 50px;
+    justify-content: flex-start;
 }
