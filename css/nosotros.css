@@ -13,28 +13,13 @@
     }
 
 
-    body {
-        color: var(--color-text-primary);
-        background: var(--color-background-primary);
-        background-repeat: no-repeat;
-        font-size: 1rem;
-        display: grid;
-        min-height: 100vh;
-        grid-template-rows: auto 1fr auto;
-        margin: 0;
-
-        /* Fondo decorativo: paw (ambos lados) */
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #CCB08A;
     color: #000000;
+    
 
 }
 
@@ -131,6 +116,42 @@ body {
 }
 
 
+/* Footer */
+    footer {
+        background-color: var(--color-surface);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 0.75rem;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.15rem;
+    }
 
+    footer .contactos,
+    footer .proyecto { min-width: 220px; padding: 0.75rem 1rem; }
 
+    .icon-footer { width: 2.2rem; height: 2.2rem; transition: var(--transition-smooth); }
+
+    /* Botones/enlaces del footer */
+    .github a, .instagram a, .whatsapp a, .correo a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        border: 2px solid var(--color-accent);
+        border-radius: 0.75rem;
+        background: var(--color-surface-soft);
+        color: var(--color-text-primary);
+        text-decoration: none;
+        transition: var(--transition-smooth);
+    }
+
+    .github a:hover, .instagram a:hover, .whatsapp a:hover, .correo a:hover {
+        background: var(--color-accent);
+        color: var(--color-white-pure);
+        transform: translateY(-2px);
+    }
 
