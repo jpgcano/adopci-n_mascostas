@@ -2,7 +2,7 @@
 
  :root {
         /* Paleta elegida por el usuario */
-        --color-background-primary: #F2E8DC; /* fondo principal (claro) */
+        
         --color-surface: #FDFCFA;            /* blanco cálido */
         --color-secondary-surface: #DBCDBA;  /* detalle de fondo */
         --color-text-primary: #59463B;       /* texto principal oscuro */
@@ -30,9 +30,9 @@ body {
     object-position: center center;
     border-radius: 10px;
     mask-image: linear-gradient(to bottom, 
-                transparent 0%, 
-                black 2%,          /* Fin del desvanecimiento superior */
-                black 95%,         /* Inicio del desvanecimiento inferior */
+                transparent 10%, 
+                black 10%,          /* Fin del desvanecimiento superior */
+                black 100%,         /* Inicio del desvanecimiento inferior */
                 transparent 100%
                 );
     
