@@ -1,3 +1,35 @@
+
+
+ :root {
+        /* Paleta elegida por el usuario */
+        --color-background-primary: #F2E8DC; /* fondo principal (claro) */
+        --color-surface: #FDFCFA;            /* blanco cálido */
+        --color-secondary-surface: #DBCDBA;  /* detalle de fondo */
+        --color-text-primary: #59463B;       /* texto principal oscuro */
+        --color-accent: #AD8A7B;             /* color de detalles / botones */
+        --color-white-pure: #FFFFFF;
+        --color-black: #000000;
+        --transition-smooth: all 0.3s ease;
+    }
+
+
+    body {
+        color: var(--color-text-primary);
+        background: var(--color-background-primary);
+        background-repeat: no-repeat;
+        font-size: 1rem;
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: auto 1fr auto;
+        margin: 0;
+
+        /* Fondo decorativo: paw (ambos lados) */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -97,5 +129,8 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+
+
 
 
