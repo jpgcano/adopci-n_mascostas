@@ -82,14 +82,14 @@
         .header_icon:hover { transform: scale(1.25); }
 
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #CCB08A;
-    color: #000000;
-    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #CCB08A;
+        color: #000000;
+        
 
-}
+    }
 
 .banner img {
     width: 100%;
