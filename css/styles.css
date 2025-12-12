@@ -5,12 +5,12 @@
     }
 
     :root {
-        /* Paleta elegida por el usuario */
-        --color-background-primary: #F2E8DC; /* fondo principal (claro) */
-        --color-surface: #FDFCFA;            /* blanco cálido */
-        --color-secondary-surface: #DBCDBA;  /* detalle de fondo */
-        --color-text-primary: #59463B;       /* texto principal oscuro */
-        --color-accent: #AD8A7B;             /* color de detalles / botones */
+        /* Paleta ajustada */
+        --color-background-primary: #CCB08A; /* fondo cálido */
+        --color-surface: #DBCDBA;            /* superficies (header/footer) */
+        --color-surface-soft: #F2E8DC;       /* superficies más claras */
+        --color-text-primary: #59463B;       /* texto principal */
+        --color-accent: #AD8A7B;             /* acento / botones */
         --color-white-pure: #FFFFFF;
         --color-black: #000000;
         --transition-smooth: all 0.3s ease;
@@ -19,39 +19,11 @@
     body {
         color: var(--color-text-primary);
         background: var(--color-background-primary);
-        background-repeat: no-repeat;
         font-size: 1rem;
         display: grid;
         min-height: 100vh;
         grid-template-rows: auto 1fr auto;
-        margin: 0;
-
-        /* Fondo decorativo: paw (ambos lados) */
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            /* Paleta ajustada */
-            --color-background-primary: #CCB08A; /* fondo cálido */
-            --color-surface: #DBCDBA;            /* superficies (header/footer) */
-            --color-surface-soft: #F2E8DC;       /* superficies más claras */
-            --color-text-primary: #59463B;       /* texto principal */
-            --color-accent: #AD8A7B;             /* acento / botones */
-            --color-white-pure: #FFFFFF;
-            --color-black: #000000;
-            --transition-smooth: all 0.3s ease;
-        }
-
-        body {
-            color: var(--color-text-primary);
-            background: var(--color-background-primary);
-            font-size: 1rem;
-            display: grid;
-            min-height: 100vh;
-            grid-template-rows: auto 1fr auto;
-        }
+    }
 
         /* fondo decorativo: paw en ambos lados (inline SVG) */
         body::before,
@@ -158,18 +130,65 @@
             width: 100%;
             display: flex;
             flex-direction: row;
-            padding: 1rem 0.75rem;
-            gap: 2rem;
+            padding: 1.5rem 1rem;
+            gap: 3rem;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            font-size: 1.15rem;
+            font-size: 1rem;
         }
 
         footer .contactos,
-        footer .proyecto { min-width: 220px; padding: 0.75rem 1rem; }
+        footer .proyecto { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            min-width: 220px;
+        }
 
-        .icon-footer { width: 2.2rem; height: 2.2rem; transition: var(--transition-smooth); }
+        footer .contactos p,
+        footer .proyecto p {
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        footer .contactos .conteiner,
+        footer .proyecto .github {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.75rem;
+            justify-content: center;
+    
+        }
+
+        footer .proyecto .miembros {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .icon-footer { 
+            width: 2rem;
+            height: 2rem;
+            flex-shrink: 0;
+            transition: var(--transition-smooth); 
+        }
+
+        footer .instagram,
+        footer .whatsapp,
+        footer .correo,
+        footer .github {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.75rem;
+        }
 
         /* Botones/enlaces del footer */
         .github a, .instagram a, .whatsapp a, .correo a {
@@ -182,6 +201,7 @@
             background: var(--color-surface-soft);
             color: var(--color-text-primary);
             text-decoration: none;
+            font-size: 0.95rem;
             transition: var(--transition-smooth);
         }
 
@@ -268,38 +288,3 @@
             .conteiner_menu { width: auto; }
             .header_icon { height: 2.4rem; width: 2.4rem; }
         }
-                #r3:checked ~ & .prev3, #r3:checked ~ & .next3,
-                #r4:checked ~ & .prev4, #r4:checked ~ & .next4,
-                #r5:checked ~ & .prev5, #r5:checked ~ & .next5,
-                #r6:checked ~ & .prev6, #r6:checked ~ & .next6,
-                #r7:checked ~ & .prev7, #r7:checked ~ & .next7,
-                #r8:checked ~ & .prev8, #r8:checked ~ & .next8,
-                #r9:checked ~ & .prev9, #r9:checked ~ & .next9 { display: block; }
-
-                .prev1, .prev2, .prev3, .prev4, .prev5, .prev6, .prev7, .prev8, .prev9 { left: 2rem; }
-                .next1, .next2, .next3, .next4, .next5, .next6, .next7, .next8, .next9 { right: 2rem; }
-            }
-        }
-    }
-
-    @media (max-width: 900px) {
-        body::after { background-position: center top; background-size: 12rem; opacity: 0.12; }
-        body::before { background-position: left 6% top 8%; background-size: 10rem; opacity: 0.09; }
-    }
-    #r1:checked ~ .controls .prev1, #r1:checked ~ .controls .next1,
-    #r2:checked ~ .controls .prev2, #r2:checked ~ .controls .next2,
-    #r3:checked ~ .controls .prev3, #r3:checked ~ .controls .next3,
-    #r4:checked ~ .controls .prev4, #r4:checked ~ .controls .next4,
-    #r5:checked ~ .controls .prev5, #r5:checked ~ .controls .next5,
-    #r6:checked ~ .controls .prev6, #r6:checked ~ .controls .next6,
-    #r7:checked ~ .controls .prev7, #r7:checked ~ .controls .next7,
-    #r8:checked ~ .controls .prev8, #r8:checked ~ .controls .next8,
-    #r9:checked ~ .controls .prev9, #r9:checked ~ .controls .next9 {
-        display: block;
-    }
-
-    .controls .prev1, .controls .prev2, .controls .prev3, .controls .prev4,
-    .controls .prev5, .controls .prev6, .controls .prev7, .controls .prev8, .controls .prev9 { left: 2rem; }
-
-    .controls .next1, .controls .next2, .controls .next3, .controls .next4,
-    .controls .next5, .controls .next6, .controls .next7, .controls .next8, .controls .next9 { right: 2rem; }
