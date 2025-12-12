@@ -22,16 +22,60 @@
         </ul>
     </header>
     <main>
-        <div><img src="" alt="gato"></div>
-        <div><img src="" alt="gato"></div>
-        <div><img src="" alt="gato"></div>
-        <div><img src="" alt="gato"></div>
-        <div><img src="" alt="gato"></div>
-        <div><img src="" alt="gato"></div>
-        <div><img src="" alt="gato"></div>
-        <div><img src="" alt="gato"></div>
-        <div><img src="" alt="gato"></div>
-        <div><img src="" alt="gato"></div>
+        <div class="slider" aria-label="Galería deslizable">
+            <!-- radios (ocultos) -->
+            <input type="radio" name="slides" id="r1" checked>
+            <input type="radio" name="slides" id="r2">
+            <input type="radio" name="slides" id="r3">
+            <input type="radio" name="slides" id="r4">
+            <input type="radio" name="slides" id="r5">
+            <input type="radio" name="slides" id="r6">
+            <input type="radio" name="slides" id="r7">
+            <input type="radio" name="slides" id="r8">
+            <input type="radio" name="slides" id="r9">
+
+            <div class="slides">
+                <div class="slide s1"><img src="assets/ECLIPSE.jpeg" alt="Imagen ECLIPSE"></div>
+                <div class="slide s2"><img src="assets/LIRA.jpg" alt="Imagen LIRA"></div>
+                <div class="slide s3"><img src="assets/LEANDRO.jpeg" alt="Imagen LEANDRO"></div>
+                <div class="slide s4"><img src="assets/crema.jpg" alt="Imagen crema"></div>
+                <div class="slide s5"><img src="assets/Menta.jpeg" alt="Imagen Menta"></div>
+                <div class="slide s6"><img src="assets/PELUSA.jpg" alt="Imagen PELUSA"></div>
+                <div class="slide s7"><img src="assets/menta.jpeg" alt="Imagen menta"></div>
+                <div class="slide s8"><img src="assets/AdobeColor-My Color Theme.jpeg" alt="Imagen tema de color"></div>
+                <div class="slide s9"><img src="assets/img/image.png" alt="Imagen adicional"></div>
+            </div>
+
+            <!-- controles prev/next: labels por slide (están ocultos, se mostrarán dos fijos mediante CSS) -->
+            <div class="controls">
+                <label class="prev prev1" for="r9">❮</label>
+                <label class="next next1" for="r2">❯</label>
+
+                <label class="prev prev2" for="r1">❮</label>
+                <label class="next next2" for="r3">❯</label>
+
+                <label class="prev prev3" for="r2">❮</label>
+                <label class="next next3" for="r4">❯</label>
+
+                <label class="prev prev4" for="r3">❮</label>
+                <label class="next next4" for="r5">❯</label>
+
+                <label class="prev prev5" for="r4">❮</label>
+                <label class="next next5" for="r6">❯</label>
+
+                <label class="prev prev6" for="r5">❮</label>
+                <label class="next next6" for="r7">❯</label>
+
+                <label class="prev prev7" for="r6">❮</label>
+                <label class="next next7" for="r8">❯</label>
+
+                <label class="prev prev8" for="r7">❮</label>
+                <label class="next next8" for="r9">❯</label>
+
+                <label class="prev prev9" for="r8">❮</label>
+                <label class="next next9" for="r1">❯</label>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="contactos">
@@ -60,6 +104,7 @@
             <div class="github"><img class="icon-footer" src="assets/icon/github.svg" alt="github"><a href="">Repositorio</a></div>
         </section>
     </footer>
+    
 </body>
 
 </html>
